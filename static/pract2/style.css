@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+
+body {
+    height: 100%;
+    margin: 0 20%;
+    /* Set a specific height */
+
+    background-color: white;
+
+    /*background-image: url("/static/pract2/bg_for_website_lowq.png");*/
+    /*background-size: cover;*/
+
+    /* Position and center the image to scale nicely on all screens */
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+    /*position: relative;*/
+}
+
+/* Resets */
+* {
+    padding: 0;
+    box-sizing: border-box;
+    transition: var(--transition);
+    font-family: Consolas, serif;
+    text-decoration: none;
+}
+
+/* CSS Variables */
+:root {
+    --normal-font: 400;
+    --bold-font: 600;
+    --bolder-font: 900;
+    --primary-color: #0652dd;
+    --secondary-color: #ea2027;
+    --line-height: 1.7rem;
+    --transition: 0.4s ease-in;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.nav-item {
+    font-size: 20px;
+    margin: 10px 40px;
+}
+.nav-item > a {
+    color: black;
+}
+
+.header-flex {
+    background: #fff;
+    display: flex;
+    /*padding: 1rem 1.5rem;*/
+    /*box-shadow: 2px 3px 2px #f1f1f1;*/
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+}
+
+.hero-image {
+    /*background-color: #ea2027;*/
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+}
+
+.hero-text {
+    text-align: left;
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+    color: black;
+}
+.hero-text > h1 {
+    font-size: 50px;
+    max-width: 10%;
+}
+
+.hero-text > h2 {
+    max-width: 50%;
+    margin-top: 50px;
+    font-size: 24px;
+}
+
+.hero-text > #try-button {
+    margin-top: 50px;
+    font-size: 18px;
+    border: dashed black;
+    background-color: #5D3FD3;
+    width:150px;
+    height:40px;
+    display: grid;
+}
+
+#try-button > #try-button-inner {
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+
+#try-button-inner > a {
+    color: white;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-section {
+    margin-bottom: 250px;
+}
+
+.benefit-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.benefit-card {
+    margin-bottom: 10%;
+    /*background-color: #5D3FD3;*/
+    width: 350px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: column;
+}
+
+.benefit-card-img {
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+}
+
+.benefit-card-desc {
+    background-color: aquamarine;
+    height: 100%;
+    width: 100%;
+}

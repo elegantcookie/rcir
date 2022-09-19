@@ -10,88 +10,94 @@
     <meta charset="UTF-8">
     <!-- Добавление иконки на сайт -->
     <link rel="icon" type="image/png" href="/static/pract2/kitty.png">
+
+    <!-- Web page CSS -->
+    <link rel="stylesheet" href="/static/pract2/style.css" />
 </head>
 
 <!-- Элемент <body> предназначен для хранения содержания веб-страницы (контента), отображаемого в окне браузера -->
 <body>
 
 <header>
-    <div>
-        <!-- Logo -->
-        <img height="64" width="64" src="/static/pract2/kitty_logo.png">
+    <div class="header-flex">
+        <div class="logo">
+            <!-- Logo -->
+            <img height="64" width="64" src="/static/pract2/kitty_logo.png">
+        </div>
+        <nav>
+            <div class="nav-item">
+                <a href="/">Courses</a>
+            </div>
+            <div class="nav-item">
+                <a href="/">About us</a>
+            </div>
+            <div class="nav-item">
+                <a href="/">Support</a>
+            </div>
+        </nav>
     </div>
-    <nav>
-        <div>
-            <a href="/">Courses</a>
-        </div>
-        <div>
-            <a href="/">About us</a>
-        </div>
-        <div>
-            <a href="/">Support</a>
-        </div>
-    </nav>
 </header>
 
 <!-- Элемент <main> предназначен для основного содержимого документа. -->
 <main>
-    <section>
+    <section class="hero-section">
         <!-- Элемент <div> (от англ. division — раздел, секция) является универсальным блочным элементом
          и предназначен для группирования элементов документа с целью изменения вида содержимого через стили -->
-        <div>
+        <div class="hero-text">
             <!-- Заголовки первого, второго и третьего уровня -->
             <!-- id указывает идентификатор элемента, к которому должен будет вернуться якорь -->
-            <h1><a id="#header">Learn languages in practice</a></h1>
+            <h1><a id="#header">Learn Languages</a></h1>
             <h2><a id="#subheader">Fun interactive tasks leading you to the mastery in one place</a></h2>
-            <h3>Try for free</h3>
+            <div id="try-button">
+                <div id="try-button-inner">
+                    <a href="/">Try for free</a>
+                </div>
+            </div>
         </div>
     </section>
-    <section>
-        <div>
-            <!-- Изображение, использующее карту -->
-            <img src="/static/pract2/img.png" usemap="#kittens_map">
-            <!-- Карта позволяет размечать части изображения и прикреплять к ним разные ссылки-->
-            <map name="kittens_map">
-                <!-- Формы: circle - круг, rect - прямоугольник. Для них используются координаты начала-конца/центра окружности-радиуса.
-                            poly - полигон, для выделения используются 4 координаты -->
-                <area shape="circle" coords="138, 260, 164, 137" href="https://google.com/search?q=first kitten">
-                <area shape="rect" coords="193, 175, 318, 10" href="https://google.com/search?q=second kitten">
-                <area shape="poly" coords="317,353, 287,201, 436,195, 498,303" href="https://google.com/search?q=third kitten">
-            </map>
-        </div>
-    </section>
+<!--    <section>-->
+<!--        <div>-->
+<!--            &lt;!&ndash; Изображение, использующее карту &ndash;&gt;-->
+<!--            <img src="/static/pract2/img.png" usemap="#kittens_map">-->
+<!--            &lt;!&ndash; Карта позволяет размечать части изображения и прикреплять к ним разные ссылки&ndash;&gt;-->
+<!--            <map name="kittens_map">-->
+<!--                &lt;!&ndash; Формы: circle - круг, rect - прямоугольник. Для них используются координаты начала-конца/центра окружности-радиуса.-->
+<!--                            poly - полигон, для выделения используются 4 координаты &ndash;&gt;-->
+<!--                <area shape="circle" coords="138, 260, 164, 137" href="https://google.com/search?q=first kitten">-->
+<!--                <area shape="rect" coords="193, 175, 318, 10" href="https://google.com/search?q=second kitten">-->
+<!--                <area shape="poly" coords="317,353, 287,201, 436,195, 498,303" href="https://google.com/search?q=third kitten">-->
+<!--            </map>-->
+<!--        </div>-->
+<!--    </section>-->
     <!-- Тег br HTML-элемент <br> устанавливает перевод строки в тексте (\n) -->
     <br>
-    <section>
-        <div>
-            <div>
-                <!-- Тег <p> отделяет параграфы, автоматически разделяет их
-                Тег <strong> выделяет текст жирным шрифтом, i - курсивом -->
-                <p><strong>This</strong> <i>is</i></p>
+    <section class="benefit-section">
+        <div class="benefit-cards">
+            <div class="benefit-card">
+                <div class="benefit-card-img"></div>
+                <div class="benefit-card-desc"></div>
             </div>
-            <div>
-                <!-- pre показывает текст без форматирования (несколько пробелов не превращаются один)
-                Тег <em> предназначен для акцентирования текста. Браузеры отображают такой текст курсивным начертанием. -->
-                <p><pre><em>some</em>     !</pre></p>
+            <div class="benefit-card">
+                <div class="benefit-card-img"></div>
+                <div class="benefit-card-desc"></div>
             </div>
-            <div>
-                <!-- Тег <u> добавляет подчеркивание к тексту.
-                    Тег <sub>/<sup> отображает текст в виде нижнего/верхнего индекса-->
-                <p><u>engaging</u> <sub>t</sub><sup>e</sup>xt</p>
+            <div class="benefit-card">
+                <div class="benefit-card-img"></div>
+                <div class="benefit-card-desc"></div>
             </div>
-            <div>
-                <!-- Тег <abbr> указывает, что последовательность символов является аббревиатурой. В атрибуте title можно указать расшифровку -->
-                <p>about this <abbr title="website...">WS</abbr></p>
+            <div class="benefit-card">
+                <div class="benefit-card-img">
+                    <img src="/static/pract2/certificate.png">
+                </div>
+                <div class="benefit-card-desc"></div>
             </div>
-            <div>
-                <!-- Тег <blockquote> предназначен для выделения длинных цитат внутри документа
-                 Тег <cite> помечает текст как цитату или сноску на другой материал -->
-                <blockquote>With some cool quote<cite>[somewhere...]</cite></blockquote>
+            <div class="benefit-card">
+                <div class="benefit-card-img"></div>
+                <div class="benefit-card-desc"></div>
             </div>
-            <div>
-                <!-- Тег <a> создает ссылки с адресом, указываемым в атрибуте href -->
-                <p><a href="#header">Start your learning journey</a></p>
-                <a href="#subheader">Get started</a>
+            <div class="benefit-card">
+                <div class="benefit-card-img"></div>
+                <div class="benefit-card-desc"></div>
             </div>
         </div>
     </section>
