@@ -9,20 +9,20 @@
     <!-- Указывает, что содержимое страницы должно быть закодировано в формате utf-8 -->
     <meta charset="UTF-8">
     <!-- Добавление иконки на сайт -->
-    <link rel="icon" type="image/png" href="/static/pract2/kitty.png">
+    <link rel="icon" type="image/png" href="../static/pract2/kitty.png">
 
     <!-- Web page CSS -->
-    <link rel="stylesheet" href="/static/pract2/style.css" />
+    <link rel="stylesheet" href="../static/pract2/style.css" />
 </head>
 
 <!-- Элемент <body> предназначен для хранения содержания веб-страницы (контента), отображаемого в окне браузера -->
 <body>
 
 <header>
-    <div class="header-flex">
+    <div class="flex-header">
         <div class="logo">
             <!-- Logo -->
-            <img height="64" width="64" src="/static/pract2/kitty_logo.png">
+            <img height="64" width="64" src="../static/pract2/kitty_logo.png">
         </div>
         <nav>
             <div class="nav-item">
@@ -33,6 +33,9 @@
             </div>
             <div class="nav-item">
                 <a href="/">Support</a>
+            </div>
+            <div class="nav-item last">
+                <a href="/">Get Started</a>
             </div>
         </nav>
     </div>
@@ -50,105 +53,46 @@
             <h2><a id="#subheader">Fun interactive tasks leading you to the mastery in one place</a></h2>
             <div id="try-button">
                 <div id="try-button-inner">
-                    <a href="/">Try for free</a>
+                    <a href="/">Get Started</a>
                 </div>
             </div>
         </div>
     </section>
-<!--    <section>-->
-<!--        <div>-->
-<!--            &lt;!&ndash; Изображение, использующее карту &ndash;&gt;-->
-<!--            <img src="/static/pract2/img.png" usemap="#kittens_map">-->
-<!--            &lt;!&ndash; Карта позволяет размечать части изображения и прикреплять к ним разные ссылки&ndash;&gt;-->
-<!--            <map name="kittens_map">-->
-<!--                &lt;!&ndash; Формы: circle - круг, rect - прямоугольник. Для них используются координаты начала-конца/центра окружности-радиуса.-->
-<!--                            poly - полигон, для выделения используются 4 координаты &ndash;&gt;-->
-<!--                <area shape="circle" coords="138, 260, 164, 137" href="https://google.com/search?q=first kitten">-->
-<!--                <area shape="rect" coords="193, 175, 318, 10" href="https://google.com/search?q=second kitten">-->
-<!--                <area shape="poly" coords="317,353, 287,201, 436,195, 498,303" href="https://google.com/search?q=third kitten">-->
-<!--            </map>-->
-<!--        </div>-->
-<!--    </section>-->
     <!-- Тег br HTML-элемент <br> устанавливает перевод строки в тексте (\n) -->
     <br>
     <section class="benefit-section">
-        <div class="benefit-cards">
-            <div class="benefit-card">
-                <div class="benefit-card-img"></div>
-                <div class="benefit-card-desc"></div>
-            </div>
-            <div class="benefit-card">
-                <div class="benefit-card-img"></div>
-                <div class="benefit-card-desc"></div>
-            </div>
-            <div class="benefit-card">
-                <div class="benefit-card-img"></div>
-                <div class="benefit-card-desc"></div>
-            </div>
-            <div class="benefit-card">
-                <div class="benefit-card-img">
-                    <img src="/static/pract2/certificate.png">
+        <article>
+            <div class="benefit-cards">
+                <div class="benefit-card">
+                    <div class="benefit-card-img"></div>
+                    <div class="benefit-card-desc"></div>
                 </div>
-                <div class="benefit-card-desc"></div>
+                <div class="benefit-card">
+                    <div class="benefit-card-img"></div>
+                    <div class="benefit-card-desc"></div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-card-img"></div>
+                    <div class="benefit-card-desc"></div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-card-img">
+<!--                        <img src="/static/pract2/certificate.png">-->
+                    </div>
+                    <div class="benefit-card-desc"></div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-card-img"></div>
+                    <div class="benefit-card-desc"></div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-card-img"></div>
+                    <div class="benefit-card-desc"></div>
+                </div>
             </div>
-            <div class="benefit-card">
-                <div class="benefit-card-img"></div>
-                <div class="benefit-card-desc"></div>
-            </div>
-            <div class="benefit-card">
-                <div class="benefit-card-img"></div>
-                <div class="benefit-card-desc"></div>
-            </div>
-        </div>
+        </article>
     </section>
     <br>
-    <section>
-        <div>
-            <!-- Тег <ol> создает упорядоченный список, атрибут type задает тип нумерации, start - начало нумерации -->
-            <ol type="1" start="11">
-                <!-- Тег <li> указывает элемент списка -->
-                <li>It is</li>
-                <li>so cool</li>
-                <li>to use</li>
-                <li>ordered</li>
-                <!-- Тег <ol> создает неупорядоченный список -->
-                <ul>
-                    <li>and nested</li>
-                    <li>unordered</li>
-                    <li>lists</li>
-                </ul>
-            </ol>
-        </div>
-    </section>
-    <article>
-        <div>
-            <!-- Тег <dl> создает список определений -->
-            <dl>
-                <!-- Тег <dl> указывает термин для определения -->
-                <dt>Terminology</dt>
-                <!-- Тег <dd> указывает определение для термина сверху -->
-                <dd>Terminology is a group of specialized words and respective meanings in a particular field,
-                    and also the study of such terms and their use</dd>
-                <dd>Technical or special terms used in a business, art, science, or special subject</dd>
-
-                <dt>Ordered list</dt>
-                <dd>An ordered list starts with the "ol" tag. Each list item starts with the "li" tag.
-                    The list items will be marked with numbers by default</dd>
-
-                <dt>Unordered list</dt>
-                <dd>An unordered list starts with the "ul" tag. Each list item starts with the "li" tag.
-                    The list items will be marked with bullets (small black circles) by default</dd>
-
-                <dt>Nested list</dt>
-                <dd>A nested list is a list inside another list</dd>
-
-                <!-- Термину можно добавлять несколько определений -->
-                <dt>Some more quotes</dt>
-                <dd>"A different language is a different vision of life."</dd>
-                <dd>"The limits of my language mean the limits of my world."</dd>
-            </dl>
-        </div>
-    </article>
 </main>
 <aside>
     <!-- ADS  -->
