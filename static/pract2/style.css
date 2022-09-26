@@ -9,10 +9,9 @@ body {
     background-color: white;
     background-image: url("../pract2/undraw_learning_re_32qv_full.svg");
     background-size: contain;
-    background-repeat: no-repeat;
+    background-repeat: space;
     /*background-position: bottom 90% left 90%;*/
     background-attachment: scroll;
-    z-index: 100;
     /*background-image: url("/static/pract2/bg_for_website_lowq.png");*/
     /*background-size: cover;*/
 
