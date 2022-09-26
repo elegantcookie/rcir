@@ -7,7 +7,12 @@ body {
     /* Set a specific height */
 
     background-color: white;
-
+    background-image: url("../pract2/undraw_learning_re_32qv_full.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*background-position: bottom 90% left 90%;*/
+    background-attachment: scroll;
+    z-index: 100;
     /*background-image: url("/static/pract2/bg_for_website_lowq.png");*/
     /*background-size: cover;*/
 
@@ -15,6 +20,14 @@ body {
     /*background-position: center;*/
     /*background-repeat: no-repeat;*/
     /*position: relative;*/
+
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Disables scrollbar */
+*::-webkit-scrollbar {
+    display: none;
 }
 
 /* Resets */
@@ -37,23 +50,34 @@ body {
     --transition: 0.4s ease-in;
 }
 
+/* nav start */
+
 nav {
     align-items: center;
     display: flex;
     justify-content: space-between;
 }
 
-
 .nav-item {
-    font-size: 20px;
+    font-size: 16px;
     margin: 10px 40px;
 }
 .nav-item > a {
     color: black;
 }
 
-.header-flex {
-    background: #fff;
+.nav-item.last {
+    padding: 15px;
+    border: solid;
+    border-radius: 20px;
+
+}
+
+/* nav end */
+
+
+.flex-header {
+    /*background: #fff;*/
     display: flex;
     /*padding: 1rem 1.5rem;*/
     /*box-shadow: 2px 3px 2px #f1f1f1;*/
@@ -65,6 +89,10 @@ nav {
     /*background-color: #ea2027;*/
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
 }
+.hero-section {
+    margin-bottom: 30%;
+    margin-top: 10%;
+}
 
 .hero-text {
     text-align: left;
@@ -75,8 +103,8 @@ nav {
     color: black;
 }
 .hero-text > h1 {
-    font-size: 50px;
-    max-width: 10%;
+    font-size: 70px;
+    max-width: 5%;
 }
 
 .hero-text > h2 {
@@ -86,12 +114,13 @@ nav {
 }
 
 .hero-text > #try-button {
+    border-radius: 20px;
     margin-top: 50px;
-    font-size: 18px;
-    border: dashed black;
-    background-color: #5D3FD3;
-    width:150px;
-    height:40px;
+    font-size: 20px;
+    /*border: solid black;*/
+    background-color: #372E7F;
+    width:200px;
+    height:60px;
     display: grid;
 }
 
@@ -109,10 +138,6 @@ nav {
 main {
     display: flex;
     flex-direction: column;
-}
-
-.hero-section {
-    margin-bottom: 250px;
 }
 
 .benefit-cards {
