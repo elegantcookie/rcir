@@ -1,0 +1,295 @@
+<!-- Элемент <!DOCTYPE> предназначен для указания типа текущего документа — DTD (document type definition, описание типа документа) -->
+<!DOCTYPE html>
+<!-- Тег <html> является контейнером, который заключает в себе все содержимое веб-страницы -->
+<html>
+<!-- Тег <head> предназначен для хранения служебной информации о странице -->
+<head>
+    <!-- <title>: элемент заголовка документа HTML-элемент заголовка ( <title> ) определяет заголовок документа, который отображается в заголовке окна браузера или на вкладке страницы -->
+    <title>foreign languages website</title>
+    <!-- Указывает, что содержимое страницы должно быть закодировано в формате utf-8 -->
+    <meta charset="UTF-8">
+    <!-- Добавление иконки на сайт -->
+    <link rel="icon" type="image/png" href="../static/pract2/animal-shelter.png">
+
+    <!-- Web page CSS -->
+    <link rel="stylesheet" href="../static/pract4/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<!-- Элемент <body> предназначен для хранения содержания веб-страницы (контента), отображаемого в окне браузера -->
+<body>
+
+<header>
+    <div class="flex-header">
+        <div class="logo">
+            <!-- Logo -->
+            <img height="64" width="64" src="../static/pract2/animal-shelter.png">
+        </div>
+        <nav>
+            <div class="nav-item">
+                <a href="/">Courses</a>
+            </div>
+            <div class="nav-item">
+                <a href="/">About us</a>
+            </div>
+            <div class="nav-item">
+                <a href="/">Support</a>
+            </div>
+            <div class="nav-item last">
+                <a href="/">Get Started</a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- Элемент <main> предназначен для основного содержимого документа. -->
+<main>
+    <section class="hero-section">
+        <!-- Элемент <div> (от англ. division — раздел, секция) является универсальным блочным элементом
+         и предназначен для группирования элементов документа с целью изменения вида содержимого через стили -->
+        <div class="hero-text">
+            <!-- Заголовки первого, второго и третьего уровня -->
+            <!-- id указывает идентификатор элемента, к которому должен будет вернуться якорь -->
+            <h1><a id="#header">Learn Languages</a></h1>
+            <h2><a id="#subheader">Fun interactive tasks leading you to the mastery in one place</a></h2>
+            <div id="try-button">
+                <div id="try-button-inner">
+                    <a href="">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Тег br HTML-элемент <br> устанавливает перевод строки в тексте (\n) -->
+    <br>
+    <section class="benefit-section">
+        <div class="benefit-cards">
+            <div class="benefit-card">
+                <div class="benefit-card-img"></div>
+                <div class="benefit-card-desc"></div>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-card-img"></div>
+                <div class="benefit-card-desc"></div>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-card-img"></div>
+                <div class="benefit-card-desc"></div>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-card-img">
+<!--                        <img src="/static/pract2/certificate.png">-->
+                </div>
+                <div class="benefit-card-desc"></div>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-card-img"></div>
+                <div class="benefit-card-desc"></div>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-card-img"></div>
+                <div class="benefit-card-desc"></div>
+            </div>
+        </div>
+    </section>
+</main>
+<section>
+    <h2>Form</h2>
+    <div class="form">
+        <form>
+            <div class="form-column">
+                <label>Enter name:</label><br>
+                <input type="text" placeholder="Your name" required pattern="\w+ \w+"><br>
+
+                <label>Enter phone number:</label><br>
+                <input type="tel" placeholder="+1(999)999-99-99" required><br>
+
+                <label>Enter email:</label><br>
+                <input type="email" placeholder="address@mailname.domen" required><br>
+
+                <label>Enter password:</label><br>
+                <input type="password" placeholder="Your password" required><br>
+
+                <label>Add pin code:</label>
+                <select multiple required size="1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                </select>
+                <select multiple required size="1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                </select>
+                <select multiple required size="1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                </select>
+                <select multiple required size="1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                </select>
+            </div>
+            <div class="form-column">
+                <label>Enter your file promo code:</label><br>
+                <input type="file"><br>
+
+                <label>What languages do you learn:</label><br>
+                <label for="eng">English</label>
+                <input type="checkbox" id="eng" value="English" checked><br>
+                <label for="rus">Russian</label>
+                <input type="checkbox" id="rus" value="Russian"><br>
+                <label for="chi">Chinese</label>
+                <input type="checkbox" id="chi" value="Chinese"><br>
+
+                <br>
+                <label>Where did you know about us:</label><br>
+                <label for="tv">Television</label>
+                <input type="radio" id="tv"><br>
+                <label for="bb">Billboards</label>
+                <input type="radio" id="bb" checked><br>
+
+                <div>
+                    <br>
+                    <label>Enter your birthdate:</label><br>
+                    <input type="datetime-local" required min="2008-01-01" max="2200-01-01"><br>
+                </div>
+
+                <div>
+                    <br>
+                    <label>Describe what you like about our products:</label><br>
+                    <textarea placeholder="Your mini games are fire!" cols="50" rows="10" maxlength="100" minlength="10" required></textarea><br>
+                </div>
+
+                <fieldset>
+                    <legend>Choose your favorite monster</legend>
+
+                    <input type="radio" id="kraken" name="monster" value="K">
+                    <label for="kraken">Kraken</label><br>
+
+                    <input type="radio" id="sasquatch" name="monster" value="S">
+                    <label for="sasquatch">Sasquatch</label><br>
+
+                    <input type="radio" id="mothman" name="monster" value="M" />
+                    <label for="mothman">Mothman</label>
+                </fieldset>
+            </div>
+
+            <input type="submit"><br>
+        </form>
+    </div>
+</section>
+<section>
+    <div class="videos">
+        <div class="video-item">
+            <iframe src="https://www.youtube.com/embed/xetSFt4BuFw"></iframe>
+        </div>
+        <div class="video-item">
+            <video controls poster="../static/pract3/4500_9_07.jpg" preload="auto">
+                <source src="../static/vids/the%20perfect%20girl%20_%20johan%20liebert%20_%20edit.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</section>
+<article>
+    <div>
+        <h1>Интересные факты</h1>
+        <img class="cat-image" src="../static/pract3/4500_9_07.jpg">
+        <ul>
+            <li>На пляже Омаха, находится больше песчинок, чем атомов в видимой вселенной.</li>
+            <li>Кольца Сатурна по общему весу в 1000 раз тяжелее самого Сатурна, в 100 раз тяжелее Земли и в 20 раз
+                тяжелее Солнца.</li>
+            <li>Самый маленький человек в мире - Куджимато Амиози. Родился в японии в 1953 году.
+                В это сложно поверить, но его рост при рождении был чуть меньше атома. Куджимато умео сразу же после рождения,
+                т.к. большие атомы кислорода просто не могли попасть в его дыхательные пути.</li>
+            <li>Если из Bugatti Veyron на максимальной скорости выстрелить из снайперской мощнейшей винтовки,
+                то пуля преодолеет первое космическое ускорение и вырвется за пределы земной орбиты.</li>
+        </ul>
+    </div>
+    <p>
+        ⣿⣿⣿⣿⣿⣿⡷⣯⢿⣿⣷⣻⢯⣿⡽⣻⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⠸⣿⣿⣆⠹⣿⣿⢾⣟⣯⣿⣿⣿⣿⣿⣿⣽⣻⣿⣿⣿⣿⣿⣿⣿⣿⣷⡌
+        ⣿⣿⣿⣿⣿⣿⣻⣽⡿⣿⣎⠙⣿⣞⣷⡌⢻⣟⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣿⣿⣿⣿⣿⣿⡄⠹⣿⣿⡆⠻⣿⣟⣯⡿⣽⡿⣿⣿⣿⣿⣽⡷⣯⣿⣿⣿⣿⣿⣿⣿⣿⣿
+        ⣿⣿⣿⣿⣿⣿⣟⣷⣿⣿⣿⡀⠹⣟⣾⣟⣆⠹⣯⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⢠⡘⣿⣿⡄⠉⢿⣿⣽⡷⣿⣻⣿⣿⣿⣿⡝⣷⣯⢿⣿⣿⣿⣿⣿⣿⣿
+        ⣿⣿⣿⣿⣿⣿⣯⢿⣾⢿⣿⡄⢄⠘⢿⣞⡿⣧⡈⢷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⢸⣧⠘⣿⣷⠈⣦⠙⢿⣽⣷⣻⣽⣿⣿⣿⣿⣌⢿⣯⢿⣿⣿⣿⣿⣿⣿
+        ⣿⣿⣿⣿⣿⣿⣟⣯⣿⢿⣿⡆⢸⡷⡈⢻⡽⣷⡷⡄⠻⣽⣿⣿⡿⣿⣿⣿⣿⣿⣿⣷⣿⣿⣿⣿⣏⢰⣯⢷⠈⣿⡆⢹⢷⡌⠻⡾⢋⣱⣯⣿⣿⣿⣿⡆⢻⡿⣿⣿⣿⣿⡟⣿
+        ⣿⣿⣿⣿⣿⣿⡎⣿⢾⡿⣿⡆⢸⣽⢻⣄⠹⣷⣟⣿⣄⠹⣟⣿⣿⣟⣿⣿⣿⣿⣿⣿⣽⣿⣿⣿⡇⢸⣯⣟⣧⠘⣷⠈⡯⠛⢀⡐⢾⣟⣷⣻⣿⣿⣿⡿⡌⢿⣻⣿⣿⣿⣿⡌
+        ⣿⣿⣿⣿⣿⣿⣧⢸⡿⣟⣿⡇⢸⣯⣟⣮⢧⡈⢿⣞⡿⣦⠘⠏⣹⣿⣽⢿⣿⣿⣿⣿⣯⣿⣿⣿⡇⢸⣿⣿⣾⡆⠹⢀⣠⣾⣟⣷⡈⢿⣞⣯⢿⣿⣿⣿⢷⠘⣯⣿⣿⣿⣿⣷
+        ⣿⣿⣿⣿⣿⣿⣿⡈⣿⢿⣽⡇⠘⠛⠛⠛⠓⠓⠈⠛⠛⠟⠇⢀⢿⣻⣿⣯⢿⣿⣿⣿⣷⢿⣿⣿⠁⣾⣿⣿⣿⣧⡄⠇⣹⣿⣾⣯⣿⡄⠻⣽⣯⢿⣻⣿⣿⡇⢹⣾⣿⣿⣿⣿
+        ⣿⣿⣿⣿⣿⣿⣿⡇⢹⣿⡽⡇⢸⣿⣿⣿⣿⣿⣞⣆⠰⣶⣶⡄⢀⢻⡿⣯⣿⡽⣿⣿⣿⢯⣟⡿⢀⣿⣿⣿⣿⣿⣧⠐⣸⣿⣿⣷⣿⣿⣆⠹⣯⣿⣻⣿⣿⣿⢀⣿⢿⣿⣿⣿
+        ⣿⣿⣿⣿⣿⣿⣿⣿⠘⣯⡿⡇⢸⣿⣿⣿⣿⣿⣿⣿⣧⡈⢿⣳⠘⡄⠻⣿⢾⣽⣟⡿⣿⢯⣿⡇⢸⣿⣿⣿⣿⣿⣿⡀⢾⣿⣿⣿⣿⣿⣿⣆⠹⣾⣷⣻⣿⡿⡇⢸⣿⣿⣿⣿
+        ⣿⣿⣿⣿⣿⣿⣿⣿⡇⢹⣿⠇⢸⣿⣿⣿⣿⣿⣿⣿⣿⣷⣄⠻⡇⢹⣆⠹⣟⣾⣽⣻⣟⣿⣽⠁⣾⣿⣿⣿⣿⣿⣿⣇⣿⣿⠿⠛⠛⠉⠙⠋⢀⠁⢘⣯⣿⣿⣧⠘⣿⣿⣿⣿
+        ⣿⣿⣿⣿⣿⣿⣿⣿⣿⡈⣿⡃⢼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⡙⠌⣿⣆⠘⣿⣞⡿⣞⡿⡞⢠⣿⣿⣿⣿⣿⡿⠛⠉⠁⢀⣀⣠⣤⣤⣶⣶⣶⡆⢻⣽⣞⡿⣷⠈⣿⣻⣿⣿
+        ⣿⣿⣿⣿⣿⣿⣿⣿⡿⠃⠘⠁⠉⠉⠉⠉⠉⠉⠉⠉⠉⠙⠛⠛⢿⣄⢻⣿⣧⠘⢯⣟⡿⣽⠁⣾⣿⣿⣿⣿⣿⡃⢀⢀⠘⠛⠿⢿⣻⣟⣯⣽⣻⣵⡀⢿⣯⣟⣿⢀⣿⣽⣿⣿
+        ⣿⣿⣿⣟⣿⣿⣿⣿⣶⣶⡆⢀⣿⣾⣿⣾⣷⣿⣶⠿⠚⠉⢀⢀⣤⣿⣷⣿⣿⣷⡈⢿⣻⢃⣼⣿⣿⣿⣿⣻⣿⣿⣿⡶⣦⣤⣄⣀⡀⠉⠛⠛⠷⣯⣳⠈⣾⡽⣾⢀⣿⢾⣿⣿
+        ⣿⢿⣿⣿⣻⣿⣿⣿⣿⣿⡿⠐⣿⣿⣿⣿⠿⠋⠁⢀⢀⣤⣾⣿⣿⣿⣿⣿⣿⣿⣿⣌⣥⣾⡿⣿⣿⣷⣿⣿⢿⣷⣿⣿⣟⣾⣽⣳⢯⣟⣶⣦⣤⡾⣟⣦⠘⣿⢾⡁⢺⣿⣿⣿
+        ⣿⣻⣿⣿⡷⣿⣿⣿⣿⣿⡗⣦⠸⡿⠋⠁⢀⢀⣠⣴⢿⣿⣽⣻⢽⣾⣟⣷⣿⣟⣿⣿⣿⣳⠿⣵⣧⣼⣿⣿⣿⣿⣿⣾⣿⣿⣿⣿⣿⣽⣳⣯⣿⣿⣿⣽⢀⢷⣻⠄⠘⣯⣿⣿
+        ⣿⢷⣻⣿⣿⣷⣻⣿⣿⣿⡷⠛⣁⢀⣀⣤⣶⣿⣛⡿⣿⣮⣽⡻⣿⣮⣽⣻⢯⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣯⢀⢸⣿⢀⡆⣿⣿⣿
+        ⠸⣟⣯⣿⣿⣷⢿⣽⣿⣿⣷⣿⣷⣆⠹⣿⣶⣯⠿⣿⣶⣟⣻⢿⣷⣽⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢀⣯⣟⢀⡇⢼⣿⣿
+        ⣇⠹⣟⣾⣻⣿⣿⢾⡽⣿⣿⣿⣿⣿⣆⢹⣶⣿⣻⣷⣯⣟⣿⣿⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢀⡿⡇⢸⡇⢸⣿⡇
+        ⣿⣆⠹⣷⡻⣽⣿⣯⢿⣽⣻⣿⣿⣿⣿⣆⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠛⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⢸⣿⠇⣼⡇⢸⡿⢠
+        ⡙⠾⣆⠹⣿⣦⠛⣿⢯⣷⢿⡽⣿⣿⣿⣿⣆⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠎⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⢀⣿⣾⣣⡿⡇⢸⢃⣾
+        ⣿⣷⡌⢦⠙⣿⣿⣌⠻⣽⢯⣿⣽⣻⣿⣿⣿⣧⠩⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⢰⢣⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠃⢀⢀⢿⣞⣷⢿⡇⠉⣼⣿
+        ⣿⣽⣆⠹⣧⠘⣿⣿⡷⣌⠙⢷⣯⡷⣟⣿⣿⣿⣷⡀⡹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣈⠃⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⢀⣴⡧⢀⠸⣿⡽⣿⢀⣾⣿⣿
+        ⢻⣽⣿⡄⢻⣷⡈⢿⣿⣿⢧⢀⠙⢿⣻⡾⣽⣻⣿⣿⣄⠌⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠛⢁⣰⣾⣟⡿⢀⡄⢿⣟⣿⢀⣿⣿⣿
+        ⡄⢿⣿⣷⢀⠹⣟⣆⠻⣿⣿⣆⢀⣀⠉⠻⣿⡽⣯⣿⣿⣷⣈⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⢀⣠⠘⣯⣷⣿⡟⢀⢆⠸⣿⡟⢸⣿⣿⣿
+        ⣷⡈⢿⣿⣇⢱⡘⢿⣷⣬⣙⠿⣧⠘⣆⢀⠈⠻⣷⣟⣾⢿⣿⣆⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⣠⡞⢡⣿⢀⣿⣿⣿⠇⡄⢸⡄⢻⡇⣼⣿⣿⣿
+        ⣿⣷⡈⢿⣿⡆⢣⡀⠙⢾⣟⣿⣿⣷⡈⠂⠘⣦⡈⠿⣯⣿⢾⣿⣆⠙⠻⠿⠿⠿⠿⡿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠛⢋⣠⣾⡟⢠⣿⣿⢀⣿⣿⡟⢠⣿⢈⣧⠘⢠⣿⣿⣿⣿
+        ⣿⣿⣿⣄⠻⣿⡄⢳⡄⢆⡙⠾⣽⣿⣿⣆⡀⢹⡷⣄⠙⢿⣿⡾⣿⣆⢀⡀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⢀⣀⣠⣴⡿⣯⠏⣠⣿⣿⡏⢸⣿⡿⢁⣿⣿⢀⣿⠆⢸⣿⣿⣿⣿
+        ⣿⣿⣿⣿⣦⡙⣿⣆⢻⡌⢿⣶⢤⣉⣙⣿⣷⡀⠙⠽⠷⠄⠹⣿⣟⣿⣆⢙⣋⣤⣤⣤⣄⣀⢀⢀⢀⢀⣾⣿⣟⡷⣯⡿⢃⣼⣿⣿⣿⠇⣼⡟⣡⣿⣿⣿⢀⡿⢠⠈⣿⣿⣿⡟
+        ⣿⣿⣿⣿⣿⣷⣮⣿⣿⣿⡌⠁⢤⣤⣤⣤⣬⣭⣴⣶⣶⣶⣆⠈⢻⣿⣿⣆⢻⣿⣿⣿⣿⣿⣿⣷⣶⣤⣌⣉⡘⠛⠻⠶⣿⣿⣿⣿⡟⣰⣫⣴⣿⣿⣿⣿⠄⣷⣿⠆⢻⣿⣿⡇﻿
+    </p>
+    <br>
+</article>
+
+<footer>
+    <div>
+        <div>
+            <address>
+                <div>Help and support</div>
+                <ul>
+                    <!-- Используя mailto, можно указать ссылку на почту, а tel - номер телефона,
+                     при открытии которых запустится приложение по умолчанию для отправки письма/звонка  -->
+                    <li><a href="mailto:websitesupport@gmail.com">Support Email</a></li>
+                    <li><a href="tel:12312300">Support call centre</a></li>
+                </ul>
+            </address>
+        </div>
+        <div>
+            <div>Social</div>
+            <ul>
+                <!-- У изображения с тегом <img> можно указать height - высоту и width - ширину -->
+                <li><img height="15px" width="15px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/1245px-Twitter-logo.svg.png"> <a href="https://twitter.com/">Twitter</a></li>
+                <li><img height="15px" width="15px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/VK.com-logo.svg/900px-VK.com-logo.svg.png"> <a href="https://vk.com/">VK</a></li>
+            </ul>
+        </div>
+    </div>
+
+</footer>
+</body>
+</html>

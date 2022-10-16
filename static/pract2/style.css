@@ -66,10 +66,17 @@ nav {
 }
 
 .nav-item.last {
+    cursor: pointer;
     padding: 15px;
     border: solid;
     border-radius: 20px;
+}
 
+.nav-item.last:hover {
+    background-color: black;
+}
+.nav-item.last:hover a {
+    color: white;
 }
 
 /* nav end */
@@ -112,6 +119,8 @@ nav {
     font-size: 24px;
 }
 
+
+/* Button start */
 .hero-text > #try-button {
     border-radius: 20px;
     margin-top: 50px;
@@ -123,6 +132,11 @@ nav {
     display: grid;
 }
 
+.hero-text > #try-button:active {
+    background-color: red;
+}
+
+
 #try-button > #try-button-inner {
     color: white;
     text-align: center;
@@ -131,8 +145,14 @@ nav {
 
 #try-button-inner > a {
     color: white;
-
 }
+
+#try-button-inner > a:visited {
+    color: white;
+}
+
+/* Button end */
+
 
 main {
     display: flex;
@@ -171,12 +191,14 @@ main {
 
 /* Aside start */
 .ads {
-    position: absolute;
+    position: fixed;
     border: solid black;
 
-    top: 1000px;
-    right: 0;
-    bottom: 0;
+    top: auto;
+    /*top: 0;*/
+    /*right: 0;*/
+    bottom: 10%;
+    left: 50px;
     width: 250px;
     height: 700px;
 }
@@ -203,3 +225,55 @@ main {
     text-align: center;
 }
 /* Aside end */
+
+/* Aside start 2 */
+.ads-left {
+    position: sticky;
+    border: solid black;
+    /*background-color: #ea2027;*/
+    top: auto;
+    /*top: 0;*/
+    /*right: 0;*/
+    bottom: 10%;
+    /*left: 50px;*/
+    margin-left: 1235px;
+    width: 250px;
+    height: 700px
+}
+
+.flex-ads-left {
+    width:100%;
+    height: 100%;
+    cursor: pointer;
+    /*height: 100%;*/
+    /*width: 100%;*/
+}
+
+.flex-ads-left ~ div {
+    background-color: #ea2027;
+
+}
+
+.flex-ads_item.img ~ .flex-ads_item.description {
+    color: #ea2027;
+}
+
+.flex-ads_item.img + .flex-ads_item.description {
+    margin: 40% 0;
+    text-align: center;
+}
+/* Aside end 2 */
+
+/* Section start */
+ul > li {
+    font-family: 'Roboto', sans-serif;
+}
+/* Section end */
+
+/* Cat image start */
+.cat-image {
+    float: right;
+    width: 300px;
+    height: 300px;
+}
+/* Cat image end */
